@@ -2,16 +2,15 @@
 
 # What is the largest prime factor of the number 600851475143 ?
 
-number = 13195
+number = 600851475143
 prime_factors = []
 
-for i in range(2, 100):
+for i in range(2, 10000):
     if number % i == 0:
         for x in range(2, i):
             if i % x == 0:
                 break
-            else:
-                prime_factors.append(i)
-                break
+        else:
+            prime_factors.append(i)
 
 print(prime_factors)
